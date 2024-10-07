@@ -35,7 +35,7 @@ public class Login extends javax.swing.JFrame {
         setTitle("SGCA 3000");
         setMinimumSize(new java.awt.Dimension(400, 600));
         setName("login"); // NOI18N
-        setPreferredSize(new java.awt.Dimension(400, 600));
+        setResizable(false);
         setSize(new java.awt.Dimension(400, 600));
 
         bg.setBackground(new java.awt.Color(255, 255, 255));
@@ -47,19 +47,18 @@ public class Login extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/user.png"))); // NOI18N
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jLabel1.setMaximumSize(new java.awt.Dimension(4, 512));
-        jLabel1.setMinimumSize(new java.awt.Dimension(400, 280));
         jLabel1.setPreferredSize(new java.awt.Dimension(4, 512));
         bg.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 380, 280));
-        bg.add(txNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, 320, 40));
-        bg.add(txPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 440, 320, 40));
+        bg.add(txNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 330, 320, 40));
+        bg.add(txPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 420, 320, 40));
 
         lbNombre.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         lbNombre.setText("Usuario");
-        bg.add(lbNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 310, -1, -1));
+        bg.add(lbNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 300, -1, -1));
 
         lbPassword.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         lbPassword.setText("Contraseña");
-        bg.add(lbPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 400, -1, -1));
+        bg.add(lbPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 390, -1, -1));
 
         btnIngresar.setText("INGRESAR");
         btnIngresar.addActionListener(new java.awt.event.ActionListener() {
@@ -67,7 +66,7 @@ public class Login extends javax.swing.JFrame {
                 btnIngresarActionPerformed(evt);
             }
         });
-        bg.add(btnIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 510, -1, -1));
+        bg.add(btnIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 480, 140, 60));
 
         txEstado.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txEstado.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
